@@ -1,1 +1,72 @@
 /* Write your CSS code here */
+.appContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+  font-family: Roboto;
+}
+.websitelogo {
+  height: 50px;
+}
+.linksContainer {
+  display: flex;
+
+  align-items: center;
+  list-style: none;
+}
+.linkItem {
+  padding-right: 15px;
+  color: #475569;
+  text-decoration: none;
+}
+.button {
+  color: white;
+  background-color: #0b69ff;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+  padding: 7px;
+}
+
+.appContainerESM {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .appContainer {
+    display: none;
+  }
+  .appContainerESM {
+    display: flex;
+    flex-direction: column;
+  }
+  .linkItem {
+    display: none;
+  }
+  .websitelogo {
+    height: 20px;
+  }
+  .navImg {
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+  }
+  .button {
+    background-color: transparent;
+  }
+  .logoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .linksContainer {
+    justify-content: space-around;
+    background-color: aliceblue;
+    align-items: center;
+  }
+}
