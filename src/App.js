@@ -1,3 +1,11 @@
-const App = () => <h1>Remove this heading and write your code here</h1>
+import {Switch, Route} from 'react-router-dom'
+
+import NotFound from './components/NotFound'
+
+const App = () => (
+  <Switch>
+    <Route component={NotFound} />
+  </Switch>
+)
 
 export default App
