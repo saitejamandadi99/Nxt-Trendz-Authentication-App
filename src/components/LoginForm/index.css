@@ -31,9 +31,12 @@
 .login-image {
   width: 278px;
 }
-.error {
+.error-message {
   color: red;
+  font-size: 14px;
+  margin-top: 10px;
 }
+
 @media screen and (min-width: 992px) {
   .login-image {
     width: 60%;
